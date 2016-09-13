@@ -50,7 +50,8 @@
         
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
     <script>
-    $.backstretch("/static/logo.jpg");
+    {% load static from staticfiles %}
+    $.backstretch("{% static "logo.jpg" %}");
     </script>
 </body>
 </html>
